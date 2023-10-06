@@ -1,0 +1,973 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Source+Sans+Pro&display=swap');
+
+body{
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0;
+}
+
+/* Quelques généralités*/
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+
+
+
+/* HEADER */
+/* Style du header */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+  
+#navbar {
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F1D2D4;
+    align-items: center;
+    height: 80px;
+}
+
+.header_2 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+}
+
+#navbar_2{
+display : flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: #203E97;
+align-items: center;
+height: 80px;
+}
+
+/* Style du logo */
+#logo {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#logo_2 {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#logo img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#logo_2 img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+#logo img:hover{
+    transform: rotate(-45deg)
+}
+
+#logo_2 img:hover{
+  transform: rotate(-45deg)
+}
+  
+/* Style du texte dans le logo */
+#logo h1 {
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#logo h1:hover{
+    color: #203E97;
+}
+
+#logo_2 h1 {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#logo_2 h1:hover{
+  color: #F1D2D4;
+}
+  
+/* Style de la liste de navigation */
+
+.burger{
+    display:none;
+}
+
+.burger_2{
+  display: none;
+}
+
+#liste_section {
+    float: right;
+    margin: 0;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+#liste_section_2 {
+  float: right;
+  margin: 0;
+  margin-top: 0;
+  margin-right: 20px;
+}
+  
+/* Style des éléments de la liste de navigation */
+#liste_section li {
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
+
+#liste_section_2 li {
+  display: inline-block;
+  margin-left: 20px;
+  list-style: none;
+}
+  
+/* Style des liens de la liste de navigation */
+#liste_section li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+  
+#liste_section_2 li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Style des liens de la liste de navigation au survol de la souris */
+#liste_section li a:hover {
+    color: #203E97;
+}
+
+#liste_section li svg path {
+    fill: #000000;
+}
+
+#liste_section li svg path:hover {
+    fill: #203E97;
+}
+
+#liste_section_2 li a:hover {
+  color: #F1D2D4;
+}
+
+#liste_section_2 li svg path {
+  fill: #ffffff;
+}
+
+#liste_section_2 li svg path:hover {
+  fill:#F1D2D4;
+}
+   
+  
+
+
+
+
+
+
+/*SECTION PRESENTATION*/
+
+#presentation{
+    padding:2%;
+    background-color: #F1D2D4;
+}
+  
+#presentation h2 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#203E97;
+    max-width: 80%;
+}
+  
+#presentation p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/*presenation 2*/
+#presentation_2{
+    padding:2%;
+    display: flex;
+}
+
+#presentation_2 #pays-info{
+    width: 70%;
+}
+
+#presentation_2 #drapeau{
+  height: 35px;
+  width: auto;
+}
+
+#presentation_2 #partie_bouton{
+    width: 30%;
+}
+  
+#presentation_2 h2 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#203E97;
+    max-width: 80%;
+}
+  
+#presentation_2 p {
+    max-width: 97%;
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+#presentation_2 img{
+    width: 90%;
+}
+
+
+
+
+/*SECTION CHOIX DU PAYS*/
+
+#choix{
+    padding:2%;
+}
+
+#choix h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#203E97;
+    max-width: 80%;
+}
+
+/* Pour aligner les images des pays*/
+.pays-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+  
+.presentation_pays {
+    flex: 0 0 calc(33.33% - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.presentation_pays:last-child {
+    margin-right: 0;
+}
+  
+.presentation_pays img {
+    margin-top: 10%;
+    max-width: 80%;
+    height: 250px;
+    width: 350px;
+    border-radius: 10%;
+    transition: filter 0.5s;
+}
+
+.presentation_pays:hover img {
+    filter:grayscale(50);
+    cursor: pointer;
+}
+
+/* Pour mettre les noms des pays par dessus les images*/
+.pays{
+    display: inline-block;
+    position: relative;
+}
+
+#caption_pays{
+    z-index: 1;
+    position:absolute;
+    text-align: center;
+   
+    font-size: 30px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+.presentation_pays:hover #caption_pays{
+    color: #F1D2D4;
+}
+  
+
+
+
+
+
+
+
+/*SECTION PRESENTATION INFOS */
+
+/*presentation de la cuisine, nature, culture, sport*/
+#presentation-info{
+  padding:2%;
+  display: flex;
+  justify-content: center;
+}
+
+#presentation-info #pays-info-categorie{
+  padding-top: 0;
+  width: 95%;
+  padding-bottom: 4%;
+}
+
+
+#pays-info-categorie h2 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:#203E97;
+  max-width: 80%;
+}
+
+/* alignement des images et du texte sur la même ligne */
+
+.row-specialite{
+  display: flex;
+  align-items: center;
+}
+
+/* espacement entre les images et le texte */
+.row-specialite > * {
+  margin: 0 10px;
+}
+
+/* mise en page de la section cuisine */
+#pays-info-categorie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* mise en page des spécialités culinaires */
+.specialite{
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+/* mise en page de l'image des spécialités culinaires */
+.row-specialite img {
+  height:200px;
+  width: auto;
+}
+
+/* mise en page de la description des spécialités culinaires */
+.row-specialite p {
+  text-align: justify;
+}
+
+
+
+
+
+/*FOOTER*/
+#footer{
+  padding:1% 1% 1% 1%;
+  margin: 0;
+  margin-bottom: 0;
+  background-color:#203E97;
+  color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  position: fixed;
+  bottom:0;  /* on le colle en bas */
+  width:100%;
+  z-index: 100;
+}
+
+#footer .container {
+  text-align: center;
+}
+
+#footer li{
+  display: inline;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+/*BOUTON INTERACTIF*/
+.toggle {
+    width: 50px;
+    height: 50px;
+    background: #203E97;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle:hover{
+    background: #F1D2D4;
+}
+  
+.toggle::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+}
+
+.share.active .toggle::before {
+    content: '';
+    font-size: 2rem;
+}
+
+.share {
+    position: fixed;
+    bottom: 15%;
+    right: 7%;
+}
+
+.share ol {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    right: 0%;
+    top : -30%;
+}
+
+.share ol li {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #203E97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .3s;
+    opacity: 0;
+    fill: #ffffff;
+}
+
+.share ol li:hover{
+    background: #F1D2D4;
+}
+  
+.share.active ol li {
+    opacity: 1;
+}
+
+/* déplacement du bouton cuisine */
+ 
+.share.active ol li:nth-child(1) {
+    transition-duration: 1s;
+    transform: translate(68px, 0); /* translation vers la gauche */
+}
+
+/* déplacement du bouton culture */
+  .share.active ol li:nth-child(2) {
+    transition-duration: 1.5s;
+    transform: translate(0, 68px); /* translation vers la gauche */
+}
+
+/* déplacement du bouton sport */
+.share.active ol li:nth-child(3) {
+    transition-duration: 2s;
+    transform: translate(-68px, 0); /* translation vers la gauche */
+}
+
+/* déplacement du bouton nature */
+  .share.active ol li:nth-child(4) {
+    transition-duration: 2.5s;
+    transform: translate(0, -68px); /* translation vers la gauche */
+}
+
+/*Bouton interactif version mobile*/
+  
+.button-wrapper{
+  display: none;
+}
+
+
+
+
+
+
+
+/** PARTIE ADMIN */
+
+/*SECTION PRESENTATION*/
+
+#presentationadmin_connex {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 3%;
+  background-color: #F1D2D4;
+  padding: 20px;
+  z-index: 1;
+}
+
+#presentationadmin_connex h2 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin-bottom: 1.584vw;
+  color:#203E97;
+  max-width: 80%;
+}
+
+#presentationadmin_connex p {
+  font-size: 1.4vw;
+  color: #000000;
+  line-height: 2vw;
+}
+
+
+/*CONNEXION*/
+#connection {
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #203E97;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input[type=text], input[type=password] {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type=submit] {
+  background-color: #203E97;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #F1D2D4;
+}
+
+
+
+
+
+/* SECTION ADMINISTRATION POUR MODIFIER BDD*/
+/* Style pour la section principale */
+#presentationadmin {
+  text-align: center;
+  padding: 20px;
+  background-color: #F1D2D4;
+  color: #203E97;
+}
+
+/* Style pour les sous-sections */
+#secctionAdmin {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Style pour les titres de section */
+#secctionAdmin h2 {
+  margin-top: 0;
+}
+
+/* Style pour les formulaires */
+form {
+  margin: 20px 0;
+}
+
+/* Style pour les étiquettes */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style pour les champs de texte */
+input[type="text2"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Style pour les sélecteurs */
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+
+
+  /* HEADER */
+  /* Style du header */
+  .header {
+    height: 50px;
+    z-index: 1000;
+  }
+
+  .header_2{
+    height: 50px;
+    z-index: 1000;
+  }
+
+  #navbar{
+    height:50px;
+  }
+
+  #navbar_2{
+    height:50px;
+  }
+        
+  /* Style du logo */
+
+  #logo img{
+    width: 35px;
+    height: 25px;
+  }
+
+  #logo img:hover{
+    transform: rotate(-45deg)
+  }
+
+  #logo_2 img{
+    width: 35px;
+    height: 25px;
+  }
+
+  #logo_2 img:hover{
+    transform: rotate(-45deg)
+  }
+  
+  /* Style du texte dans le logo */
+  #logo h1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+
+  #logo h1:hover{
+    color: #203E97;
+  }
+
+  #logo_2 h1{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+    
+  #logo_2 h1:hover{
+    color: #F1D2D4;
+  }
+
+
+
+  /* Style de la liste de navigation*/
+
+  .liste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 0;
+    top : 50px;
+    left: 110%;
+    overflow: hidden;
+    opacity: 0;
+    height: calc(100vh - 55px);
+    background: #F1D2D4;
+    transition: all .4s ease-out;
+  }
+
+  .liste_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 0;
+    top : 50px;
+    left: 110%;
+    overflow: hidden;
+    opacity: 0;
+    height: calc(100vh - 55px);
+    background: #203E97;
+    transition: all .4s ease-out;
+  }
+  
+  .liste li{
+    margin-bottom: 15px;
+  }
+
+  .liste_2 li{
+    margin-bottom: 15px;
+  }
+
+  .show-liste{
+    opacity: 1;
+    padding-left: 0;
+    width: 100%;
+    left: 0;
+  }
+
+  .show-liste2{
+    opacity: 1;
+    padding-left: 0;
+    width: 100%;
+    left: 0;
+  }
+
+  .burger{
+    display: block;
+    content:"";
+    margin-right: 15px;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .burger_2{
+    display: block;
+    content:"";
+    margin-right: 15px;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .burger_2 svg path{
+    fill:#ffffff;
+  }
+
+    
+  
+  
+  
+
+
+
+
+
+
+  /*SECTION PRESENTATION*/
+
+  #presentation{
+    padding:2%;
+    background-color: #F1D2D4;
+  }
+
+  #presentation h2 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#203E97;
+    max-width: 100%;
+  }
+
+  #presentation p {
+    font-size: 12px;
+    color: #000000;
+    line-height: 1.5;
+  }
+
+  /*presenation 2*/
+  #presentation_2{
+    padding:2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #presentation_2 #pays-info{
+    width: 100%;
+    margin:3%;
+  }
+
+
+  #presentation_2 #partie_bouton{
+    max-width: 100%;
+  }
+
+  #presentation_2 h2 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#203E97;
+    max-width: 80%;
+  }
+
+  #presentation_2 p {
+    max-width: 97%;
+    font-size: 12px;
+    color: #000000;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  #presentation_2 #drapeau{
+    height:20px;
+  }
+  #presentation_2 #photopays{
+    width: 90%;
+  
+  }
+
+
+  /*presentation de cuisine, nature, culture, sport*/
+
+  .row-specialite {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row-specialite h2{
+    font-size: 4vw;
+  }
+
+  .row-specialite img {
+    height: 200px;
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .row-specialite p {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+
+  /*Bouton interactif version mobile*/
+
+  .share{
+    display: none;
+  }
+
+  .toggle{
+    display: none;
+  }
+  
+  .button-wrapper {
+    display:flex;
+    align-self: center;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .button {
+    width: 200px;
+    height: 30px;
+    background-color: #203E97;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #F1D2D4;
+  }
+
+
+
+}
